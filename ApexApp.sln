@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ApexApp", "ApexApp\ApexApp.pyproj", "{A0FB5AAA-68A7-4849-9F5F-291CABF8172C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0FB5AAA-68A7-4849-9F5F-291CABF8172C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0FB5AAA-68A7-4849-9F5F-291CABF8172C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61E07051-EE69-4F26-A117-E0BC4FC8273D}
+	EndGlobalSection
+EndGlobal
