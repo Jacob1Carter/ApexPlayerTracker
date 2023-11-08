@@ -6,13 +6,59 @@ from datetime import datetime
 
 pygame.font.init()
 
-FONT1 = pygame.font.SysFont("Arial", 20)
+FONT1 = pygame.font.SysFont("OpenSans", 20)
 
 WIDTH, HEIGHT = 1024, 600
 
 WIN = pygame.display.set_mode((WIDTH, HEIGHT), pygame.RESIZABLE)
 
 FPS = 45
+
+DISPLAY = False
+
+PLAYERNAMES_PC = [
+    "starkli999",       #   200
+    "cutemid",          #   200
+    "derpyfish",        #   404
+    "hydrosopholist",   #   200
+    "breathe",          #   404
+    "blurr",            #   404
+    "ampinq",           #   404
+    "evora",            #   404
+    "frusby",           #   200
+    "yuideh",           #   200
+    "CelloChris235",    #   404
+    "walkingtoaster42", #   200
+    "DivTheCutie",      #   200
+    "CptnBingo",        #   200
+    "Foxalete",         #   200
+    "F-F-B28",          #   404
+    "Chalro",           #   404
+    "Zane123_94",       #   200
+    "TheD3stroy3r376",  #   404
+    ]
+
+PLAYERNAMES_PS4 = [
+    "starkli999",       #
+    "cutemid",          #
+    "derpyfish",        #
+    "hydrosopholist",   #
+    "breathe",          #
+    "blurr",            #
+    "ampinq",           #
+    "evora",            #
+    "frusby",           #
+    "yuideh",           #
+    "CelloChris235",    #
+    "walkingtoaster42", #
+    "DivTheCutie",      #
+    "CptnBingo",        #
+    "Foxalete",         #
+    "F-F-B28",          #
+    "Chalro",           #
+    "Zane123_94",       #
+    "TheD3stroy3r376",  #
+    ]
 
 API_KEY = "e637479fb23d71b9e9489bd0ea814f9b"
 PLAYERNAME = "CuteMid"  # CptnBingo, Foxalete, CuteMid, F-F-B28, Chalro, Zane123_94, TheD3stroy3r376
@@ -29,6 +75,8 @@ class Game:
 
 def get_player():
     url = f"https://api.mozambiquehe.re/bridge?auth={API_KEY}&player={PLAYERNAME}&platform={PLATFORM}"
+    if DISPLAY:
+        print(url)
     response = requests.get(url)
     data = response.json()
 
