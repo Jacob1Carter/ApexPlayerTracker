@@ -5,13 +5,10 @@ from PIL import Image
 from datetime import datetime
 
 pygame.font.init()
-
 FONT1 = pygame.font.SysFont("OpenSans", 20)
 
 WIDTH, HEIGHT = 1024, 600
-
 WIN = pygame.display.set_mode((WIDTH, HEIGHT), pygame.RESIZABLE)
-
 FPS = 45
 
 DISPLAY = False
@@ -37,7 +34,6 @@ PLAYERNAMES_PC = [
     "Zane123_94",       #   200
     "TheD3stroy3r376",  #   404
     ]
-
 PLAYERNAMES_PS4 = [
     "starkli999",       #
     "cutemid",          #
